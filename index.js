@@ -5,8 +5,6 @@ var read = require('node-read')
 var TurndownService = require('turndown')
 var turndownService = new TurndownService()
 
-console.dir(argv)
-
 var data = fs.readFileSync(argv._[0])
 
 read(data.toString(), function(err, article, res) {
